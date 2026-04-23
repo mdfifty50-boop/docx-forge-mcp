@@ -1,0 +1,97 @@
+{
+  "serverInfo": {
+    "name": "docx-forge-mcp",
+    "version": "0.1.0",
+    "description": "Production-grade Word document (.docx) creation and manipulation for AI agents — create, read, edit, merge, and export documents for contracts, reports, proposals, and compliance workflows",
+    "author": "THRONE AI",
+    "license": "MIT",
+    "homepage": "https://github.com/mdfifty50-boop/docx-forge-mcp",
+    "repository": "https://github.com/mdfifty50-boop/docx-forge-mcp"
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "create_document",
+        "description": "Create a new .docx document from markdown or structured content"
+      },
+      {
+        "name": "read_document",
+        "description": "Extract text, paragraph list, headings, and metadata from an existing .docx file"
+      },
+      {
+        "name": "add_section",
+        "description": "Append a new heading + body section to an existing .docx document"
+      },
+      {
+        "name": "replace_text",
+        "description": "Find and replace text in a .docx document — ideal for template variable substitution"
+      },
+      {
+        "name": "add_table",
+        "description": "Insert a formatted table with bold header row into an existing .docx document"
+      },
+      {
+        "name": "merge_documents",
+        "description": "Combine multiple .docx files into a single merged document"
+      },
+      {
+        "name": "export_to_pdf",
+        "description": "Convert a .docx file to PDF via LibreOffice or pandoc (best effort)"
+      },
+      {
+        "name": "get_document_stats",
+        "description": "Return word count, page estimate, section count, and table count for a .docx file"
+      }
+    ],
+    "resources": [
+      {
+        "uri": "docx-forge://usage-guide",
+        "description": "Step-by-step usage guide and workflow examples for document automation"
+      }
+    ]
+  },
+  "categories": [
+    "document-automation",
+    "productivity",
+    "office",
+    "contracts",
+    "developer-tools"
+  ],
+  "keywords": [
+    "docx",
+    "word",
+    "document",
+    "office",
+    "contracts",
+    "reports",
+    "proposals",
+    "compliance",
+    "mcp",
+    "mcp-server",
+    "ai-agent",
+    "document-automation"
+  ],
+  "pricing": {
+    "free_tier": true,
+    "free_limit": "Unlimited — fully open source, runs locally"
+  },
+  "install": {
+    "npm": "npx docx-forge-mcp",
+    "claude_desktop": {
+      "mcpServers": {
+        "docx-forge": {
+          "command": "npx",
+          "args": ["docx-forge-mcp"]
+        }
+      }
+    },
+    "cursor": {
+      "mcpServers": {
+        "docx-forge": {
+          "command": "npx",
+          "args": ["docx-forge-mcp"]
+        }
+      }
+    }
+  }
+}
