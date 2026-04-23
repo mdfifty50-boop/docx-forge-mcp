@@ -1,6 +1,6 @@
 {
   "name": "docx-forge-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "mcpName": "io.github.mdfifty50-boop/docx-forge",
   "repository": {
     "type": "git",
