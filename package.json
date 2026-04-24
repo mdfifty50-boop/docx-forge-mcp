@@ -1,6 +1,6 @@
 {
   "name": "docx-forge-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "mcpName": "io.github.mdfifty50-boop/docx-forge",
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
+    "@x402/mcp": "^2.10.0",
     "docx": "^9.5.0",
     "mammoth": "^1.9.0",
     "zod": "^3.24.0"
